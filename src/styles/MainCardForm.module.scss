@@ -1,10 +1,39 @@
+@use "./colors.module.scss";
+
 .mainCardForm {
   margin: 100px auto;
   padding: 16px;
-  width: 70dvw;
+  width: 65dvw;
   height: 75dvh;
   border-radius: 1rem;
   background-color: white;
   display: flex;
   justify-content: space-between;
+  .mainContent {
+    margin-top: 40px;
+    margin-right: 95px;
+    position: relative;
+    h1 {
+      color: colors.$Marine-blue;
+    }
+    p {
+      color: colors.$Cool-gray;
+      margin: 1rem 0 2rem 0;
+    }
+    .nextStepButton {
+      position: absolute;
+      right: 0;
+      bottom: 1rem;
+      padding: 1rem;
+      width: max-content;
+      border: none;
+      border-radius: 5px;
+      color: colors.$Magnolia;
+      background-color: colors.$Marine-blue;
+      &:hover {
+        cursor: pointer;
+        background-color: colors.$Dark-Pastel-blue;
+      }
+    }
+  }
 }

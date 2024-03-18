@@ -1,4 +1,4 @@
-import AddOns from "./Components/AddOns";
+import FormInfo from "./Components/FormInfo";
 import Steps from "./Components/Steps";
 import styles from "./styles/MainCardForm.module.scss";
 
@@ -9,7 +9,8 @@ function MainCardForm() {
       <div className={styles.mainContent}>
         <h1>Personal info</h1>
         <p>Please provide your name, email address, and phone number.</p>
-        <AddOns />
+        <FormInfo />
+        <button className={styles.nextStepButton}>Next Step</button>
       </div>
     </main>
   );

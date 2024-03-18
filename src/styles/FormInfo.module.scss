@@ -1,0 +1,33 @@
+@use "./colors.module.scss";
+
+.formContainer {
+  display: flex;
+  flex-direction: column;
+  .formInfo {
+    display: flex;
+    flex-direction: column;
+    color: colors.$Marine-blue;
+    label {
+      display: flex;
+      flex-direction: column;
+      margin-bottom: 1rem;
+
+      span {
+        margin-bottom: 0.5rem;
+      }
+
+      input {
+        border: 1px solid colors.$Light-gray;
+        border-radius: 6px;
+        padding: 0.7rem 0.3rem;
+        font-size: 16px;
+        font-weight: 500;
+        color: colors.$Marine-blue;
+        &:focus {
+          border: 1px solid colors.$Purplish-blue;
+          outline: none;
+        }
+      }
+    }
+  }
+}
