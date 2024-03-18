@@ -1,0 +1,40 @@
+@use "./colors.module.scss";
+
+.steps {
+  padding: 40px 30px;
+  width: 260px;
+  height: 100%;
+  background-image: url("../assets/bg-sidebar-desktop.svg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  border-radius: 10px;
+  overflow: hidden;
+  color: white;
+
+  .step {
+    display: flex;
+    margin-bottom: 1.5rem;
+
+    .numberOfStep {
+      border: 1px solid white;
+      border-radius: 50%;
+      width: 30px;
+      height: 30px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin-right: 1rem;
+    }
+
+    .descriptionStep {
+      .titleStep {
+        color: colors.$Pastel-blue;
+        font-size: 14px;
+      }
+      .nameOfStep {
+        font-weight: 500;
+      }
+    }
+  }
+}

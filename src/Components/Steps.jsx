@@ -4,33 +4,41 @@ import styles from "../styles/Steps.module.scss";
 const Steps = () => {
   return (
     <div className={styles.steps}>
-      <span className={styles.oneStep}>
+      <span className={styles.step}>
         <span className={styles.numberOfStep}>
-          <p>1</p>
+          <p className={styles.number}>1</p>
         </span>
-        <p className={styles.titleStep}></p>
-        <p className={styles.nameOfStep}></p>
+        <span className={styles.descriptionStep}>
+          <p className={styles.titleStep}>STEP 1</p>
+          <p className={styles.nameOfStep}>YOUR INFO</p>
+        </span>
       </span>
-      <span className={styles.secondStep}>
+      <span className={styles.step}>
         <span className={styles.numberOfStep}>
-          <p>2</p>
+          <p className={styles.number}>2</p>
         </span>
-        <p className={styles.titleStep}></p>
-        <p className={styles.nameOfStep}></p>
+        <span className={styles.descriptionStep}>
+          <p className={styles.titleStep}>STEP 2</p>
+          <p className={styles.nameOfStep}>SELECT PLAN</p>
+        </span>
       </span>
-      <span className={styles.thirdStep}>
+      <span className={styles.step}>
         <span className={styles.numberOfStep}>
-          <p>3</p>
+          <p className={styles.number}>3</p>
         </span>
-        <p className={styles.titleStep}></p>
-        <p className={styles.nameOfStep}></p>
+        <span className={styles.descriptionStep}>
+          <p className={styles.titleStep}>STEP 3</p>
+          <p className={styles.nameOfStep}>ADD-ONS</p>
+        </span>
       </span>
-      <span className={styles.fourthStep}>
+      <span className={styles.step}>
         <span className={styles.numberOfStep}>
-          <p>4</p>
+          <p className={styles.number}>4</p>
         </span>
-        <p className={styles.titleStep}></p>
-        <p className={styles.nameOfStep}></p>
+        <span className={styles.descriptionStep}>
+          <p className={styles.titleStep}> STEP 4</p>
+          <p className={styles.nameOfStep}> SUMMARY</p>
+        </span>
       </span>
     </div>
   );
