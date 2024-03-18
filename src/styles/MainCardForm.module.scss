@@ -20,19 +20,37 @@
       color: colors.$Cool-gray;
       margin: 1rem 0 2rem 0;
     }
-    .nextStepButton {
+    .buttons {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      width: 100%;
       position: absolute;
-      right: 0;
       bottom: 1rem;
-      padding: 1rem;
-      width: max-content;
-      border: none;
-      border-radius: 5px;
-      color: colors.$Magnolia;
-      background-color: colors.$Marine-blue;
-      &:hover {
-        cursor: pointer;
-        background-color: colors.$Dark-Pastel-blue;
+      .backButton {
+        padding: 1rem 0;
+        color: colors.$Cool-gray;
+        font-size: 16px;
+        font-weight: 500;
+        background-color: white;
+        border: none;
+        &:hover {
+          cursor: pointer;
+          color: colors.$Marine-blue;
+        }
+      }
+      .nextButton {
+        padding: 1rem 1.5rem;
+        background-color: colors.$Marine-blue;
+        color: colors.$Magnolia;
+        border: none;
+        border-radius: 7px;
+        font-size: 16px;
+        font-weight: 500;
+        &:hover {
+          cursor: pointer;
+          background-color: colors.$Dark-Pastel-blue;
+        }
       }
     }
   }

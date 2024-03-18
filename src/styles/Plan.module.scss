@@ -1,0 +1,63 @@
+@use "./colors.module.scss";
+
+.plansContainer {
+  .plans {
+    display: flex;
+    justify-content: space-between;
+    button {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      padding: 1.1rem 0.8rem;
+      width: 30%;
+      height: 150px;
+      border: 1px solid colors.$Light-gray;
+      border-radius: 5px;
+      background-color: white;
+      p {
+        margin: 0;
+      }
+      .nameOfPlan {
+        color: colors.$Marine-blue;
+        font-weight: 500;
+      }
+      &:hover {
+        cursor: pointer;
+        border-color: colors.$Purplish-blue;
+      }
+      &:focus {
+        background-color: colors.$Purplish-blue-light;
+        border-color: colors.$Purplish-blue;
+      }
+    }
+  }
+  .typeOfPlan {
+    display: flex;
+    justify-content: center;
+    margin-top: 1rem;
+    padding: 0.6rem;
+    background-color: colors.$Purplish-blue-light;
+    border-radius: 7px;
+    font-weight: 500;
+
+    button {
+      margin: 0 1.5rem;
+      padding: 3px;
+      width: 40px;
+      height: 20px;
+      background-color: colors.$Marine-blue;
+      border: none;
+      border-radius: 25px;
+      display: flex;
+      span {
+        width: 13px;
+        height: 13px;
+        background-color: white;
+        border-radius: 50%;
+      }
+      &:hover {
+        cursor: pointer;
+      }
+    }
+  }
+}
