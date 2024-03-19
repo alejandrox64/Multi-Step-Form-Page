@@ -1,0 +1,53 @@
+@use "./colors.module.scss";
+
+.addOnsContainer {
+  display: flex;
+  flex-direction: column;
+
+  label {
+    display: flex;
+    justify-content: space-between;
+    padding: 1.3rem 1rem;
+    border: 1px solid colors.$Light-gray;
+    border-radius: 7px;
+    margin-bottom: 1rem;
+
+    .checkboxContainer {
+      display: flex;
+      gap: 1rem;
+
+      span p:first-child {
+        color: colors.$Marine-blue;
+        font-weight: 500;
+        font-size: 16px;
+      }
+      span p:last-child {
+        color: colors.$Cool-gray;
+      }
+    }
+    .priceAddOn {
+      color: colors.$Purplish-blue;
+    }
+    p {
+      margin: 0;
+    }
+    &:hover {
+      cursor: pointer;
+      border-color: colors.$Purplish-blue;
+    }
+  }
+  input {
+    appearance: none;
+    cursor: pointer;
+    border: 1px solid colors.$Light-gray;
+    border-radius: 4px;
+    width: 1.2rem;
+    height: 1.2rem;
+    &:checked {
+      background-color: colors.$Purplish-blue;
+      background-image: url("../assets/icon-checkmark.svg");
+      background-repeat: no-repeat;
+      background-position: center;
+    }
+  }
+}

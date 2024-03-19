@@ -1,4 +1,4 @@
-import Plan from "./Components/Plan";
+import AddOns from "./Components/AddOns";
 import Steps from "./Components/Steps";
 import styles from "./styles/MainCardForm.module.scss";
 
@@ -8,8 +8,10 @@ function MainCardForm() {
       <Steps />
       <div className={styles.mainContent}>
         <h1>Personal info</h1>
-        <p>Please provide your name, email address, and phone number.</p>
-        <Plan />
+        <p className={styles.descriptionMainCard}>
+          Please provide your name, email address, and phone number.
+        </p>
+        <AddOns />
         <div className={styles.buttons}>
           <button className={styles.backButton}>Go Back</button>
           <button className={styles.nextButton}>Next Step</button>
