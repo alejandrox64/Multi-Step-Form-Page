@@ -1,4 +1,4 @@
-import AddOns from "./Components/AddOns";
+import ConfirmationStep from "./Components/ConfirmationStep";
 import Steps from "./Components/Steps";
 import styles from "./styles/MainCardForm.module.scss";
 
@@ -11,7 +11,7 @@ function MainCardForm() {
         <p className={styles.descriptionMainCard}>
           Please provide your name, email address, and phone number.
         </p>
-        <AddOns />
+        <ConfirmationStep />
         <div className={styles.buttons}>
           <button className={styles.backButton}>Go Back</button>
           <button className={styles.nextButton}>Next Step</button>
