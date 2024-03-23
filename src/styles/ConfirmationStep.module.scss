@@ -1,0 +1,53 @@
+@use "./colors.module.scss";
+
+.confirmationStepContainer {
+  display: flex;
+  flex-direction: column;
+  width: 425px;
+  .planWithAddOns {
+    background-color: colors.$Magnolia;
+    border-radius: 15px;
+    padding: 1.5rem;
+    .plan {
+      border-bottom: 1px solid colors.$Cool-gray;
+      p {
+        margin-bottom: 0.3rem;
+        color: colors.$Marine-blue;
+        font-size: 16px;
+        font-weight: 500;
+      }
+      a {
+        color: colors.$Cool-gray;
+        text-decoration: underline;
+        &:hover {
+          cursor: pointer;
+        }
+      }
+    }
+    div {
+      display: flex;
+      justify-content: space-between;
+      padding: 1rem 0;
+    }
+    .addOn p:first-child {
+      color: colors.$Cool-gray;
+    }
+    .addOn p:last-child {
+      color: colors.$Marine-blue;
+    }
+  }
+  .totalPrice {
+    display: flex;
+    justify-content: space-between;
+    padding: 1.5rem;
+
+    & p:first-child {
+      color: colors.$Cool-gray;
+    }
+    & p:last-child {
+      font-size: 20px;
+      font-weight: 700;
+      color: colors.$Purplish-blue;
+    }
+  }
+}
