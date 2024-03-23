@@ -26,6 +26,11 @@
       align-items: center;
       margin-right: 1rem;
     }
+    .currentStep {
+      background-color: colors.$Light-blue;
+      color: colors.$Marine-blue;
+      font-weight: 500;
+    }
 
     .descriptionStep {
       .titleStep {

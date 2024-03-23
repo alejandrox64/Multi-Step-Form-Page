@@ -15,6 +15,8 @@ function MainCardForm() {
   const renderedComponent = useSelector(
     (state) => state.steps.renderedCard[step - 1]
   );
+  const title = useSelector((state) => state.steps.title[step - 1]);
+  const description = useSelector((state) => state.steps.description[step - 1]);
   const dispatch = useDispatch();
 
   const renderComponent = () => {
@@ -45,10 +47,8 @@ function MainCardForm() {
     <main className={styles.mainCardForm}>
       <Steps />
       <div className={styles.mainContent}>
-        <h1>Personal info</h1>
-        <p className={styles.descriptionMainCard}>
-          Please provide your name, email address, and phone number.
-        </p>
+        <h1>{title}</h1>
+        <p className={styles.descriptionMainCard}>{description}</p>
         {renderComponent()}
         <div className={styles.buttons}>
           <button onClick={handlePrevClick} className={styles.backButton}>
